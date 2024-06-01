@@ -1,0 +1,123 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: 800 !important;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(0, 189, 126);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+.dark-theme {
+  background-color: #151515;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header h1 {
+  color: rgb(0, 255, 170);
+  margin: 0;
+  padding: 10px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.main-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+@media (max-width: 992px) {
+  .input-container{
+    flex-direction: column;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid transparent; /* Borda transparente quando não está em foco */
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  resize: none;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: rgb(68, 68, 68); /* Cor da borda ao receber foco */
+}
+
+
+.submit-button {
+  background-color: rgb(0, 255, 170);
+  color: #222222;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgb(0, 161, 107);
+}
