@@ -28,7 +28,6 @@ LangChainTranslator/
 │   │   │   ├── ...
 │   │   ├── App.vue
 │   │   ├── main.js
-│   ├── nginx.conf (optional)
 │   ├── Dockerfile
 │   ├── vue.config.js
 │   ├── package.json
@@ -131,7 +130,6 @@ The backend development server will start on [http://localhost:8000](http://loca
 - **Entry Point**: `src/main.js`
 - **Components**: Located in `src/components`
 - **Dockerfile**: Builds the frontend application and serves it using Nginx
-- **Custom Nginx Configuration (Optional)**: If you need to customize the Nginx configuration, you can do so by editing the `nginx.conf` file in the frontend directory and updating the Dockerfile to use this custom configuration.
 
 ## Troubleshooting
 
